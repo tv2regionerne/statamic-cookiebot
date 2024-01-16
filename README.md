@@ -49,7 +49,7 @@ See the js documentation at https://www.cookiebot.com/en/developer/
 
 For server side checking of consent, use one of the below tags.  
 The tags will return a boolean.
-```
+```antlers
 {{ cookiebot:necessary }}
 {{ cookiebot:preferences }}
 {{ cookiebot:statistics }}
@@ -58,7 +58,7 @@ The tags will return a boolean.
 ```
 To wrap some code use it like this.  
 Check for consent on `necessary`.
-```
+```antlers
 {{ if {cookiebot:necessary} }}
     // code when consent is given
 {{ else }}
