@@ -7,8 +7,9 @@ use Statamic\Providers\AddonServiceProvider;
 class ServiceProvider extends AddonServiceProvider
 {
     protected $tags = [
-        Tags\StatamicCookiebot::class,
+        Tags\Cookiebot::class,
     ];
+
     public function bootAddon()
     {
         //
