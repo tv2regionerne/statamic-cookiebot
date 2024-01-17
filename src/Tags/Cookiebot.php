@@ -102,7 +102,6 @@ class Cookiebot extends Tags
     private function parseCookie()
     {
 
-
         if (! $consentCookie = $_COOKIE['CookieConsent'] ?? null) {
             return false;
         }
@@ -111,6 +110,7 @@ class Cookiebot extends Tags
 
         $cookieData = json_decode($valid_php_json);
         CookiebotCookieParsed::dispatch($cookieData);
+
         return $cookieData;
     }
 }
