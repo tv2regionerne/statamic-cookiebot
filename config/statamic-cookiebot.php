@@ -25,11 +25,11 @@ return [
         // Allows you to disable Google Consent Mode by passing a value of “disabled”.
         'consentmode' => null,
     ],
-    'bypass' => [
-        // The header to use for consent. E.g. 'x-contensent'
-        // Special case for proxy caching and handling parsing of consent data
-        'header' => null,
-    ],
+    /**
+     * Add the paths to exclude.
+     * The script will not be inserted in these urls and all consent will default to false
+     * Make sure that no js is expecting cookiebot in these url's.
+     */
     'exclude' => [
         // '/path_to_exclude_cookiebot_from',
     ],
