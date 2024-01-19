@@ -29,6 +29,13 @@ class Cookiebot extends Tags
         return $consent;
     }
 
+    public function all()
+    {
+        $this->params['type'] = 'all';
+
+        return $this->consent();
+    }
+
     public function necessary()
     {
         $this->params['type'] = 'necessary';
